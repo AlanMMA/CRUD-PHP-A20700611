@@ -40,7 +40,8 @@ if (!isset($_SESSION["logged"])) {
         border-radius: 5px;
         padding: 5px 10px;
         color: ivory;
-        background-color: blue;
+        background-color: green;
+        width: 100%;
     }
 
     .btnExit {
