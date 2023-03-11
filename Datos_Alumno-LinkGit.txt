@@ -1,0 +1,11 @@
+NOMBRE:
+Alan Mauricio Morales Argüello
+
+NUMERO DE CONTROL:
+A20700611
+
+ACTIVIDAD:
+Login y CRUD con php
+
+LINK AL REPOSITORIO:
+https://github.com/AlanMMA/CRUD-PHP-A20700611
