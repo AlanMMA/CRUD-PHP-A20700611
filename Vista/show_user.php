@@ -32,18 +32,18 @@ if (!$row = mysqli_fetch_object($query)) {
 <form method="POST" action="update_user.php">
         <section class="formulario">
 
-            <input type="hidden" name="user_id" value="<?php echo $row->ID ?>">
+            <input type="hidden" name="user_id" value="<?php echo $row->ID?>">
             <div class="row">
                 <label class="Nombre">Nombre:</label>
-                <input type="text" name="name" value="<?php echo $row->Nombre ?>" />
+                <input type="text" name="name" value="<?php echo $row->Nombre?>" />
             </div>
             <div class="row">
                 <label>Usuario:</label>
-                <input type="text" name="user" value="<?php echo $row->Usuario ?>" />
+                <input type="text" name="user" value="<?php echo $row->Usuario?>" />
             </div>
             <div class="row">
                 <label>Password:</label>
-                <input type="password" name="password" value="<?php echo $row->Password ?>" />
+                <input type="password" name="password" value="<?php echo $row->Password?>" />
             </div>
             <div class="row">
                 <button class="btnPrimary" type="submit">Actualizar</button>
