@@ -1,19 +1,19 @@
-<?php
-session_start();
-if (!isset($_SESSION["logged"])) {
-    header("Location: login.php");
-}
+    <?php
+    session_start();
+    if (!isset($_SESSION["logged"])) {
+        header("Location: login.php");
+    }
 
-include("conexion.php");
-$user_id = $_POST["user_id"];
-$sql = "SELECT * from usuarios where ID=" . $user_id;
-$query = mysqli_query($conn, $sql);
-if (!$row = mysqli_fetch_object($query)) {
-    echo "Usuario no existe<br>";
-    echo "<a href='index.php'>Regresar</a>";
-    exit();
-}
-?>
+    include("conexion.php");
+    $user_id = $_POST["user_id"];
+    $sql = "SELECT * from usuarios where ID=" . $user_id;
+    $query = mysqli_query($conn, $sql);
+    if (!$row = mysqli_fetch_object($query)) {
+        echo "Usuario no existe<br>";
+        echo "<a href='index.php'>Regresar</a>";
+        exit();
+    }
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +32,7 @@ if (!$row = mysqli_fetch_object($query)) {
 <form method="POST" action="update_user.php">
         <section class="formulario">
 
-            <input type="hidden" name="user_id" value="<?php echo $row->ID?>">
+            <input type="hidden" name=" " value="<?php echo $row->ID?>">
             <div class="row">
                 <label class="Nombre">Nombre:</label>
                 <input type="text" name="name" value="<?php echo $row->Nombre?>" />
