@@ -32,7 +32,7 @@
 <form method="POST" action="update_user.php">
         <section class="formulario">
 
-            <input type="hidden" name=" " value="<?php echo $row->ID?>">
+            <input type="hidden" name="user_id" value="<?php echo $row->ID?>">
             <div class="row">
                 <label class="Nombre">Nombre:</label>
                 <input type="text" name="name" value="<?php echo $row->Nombre?>" />

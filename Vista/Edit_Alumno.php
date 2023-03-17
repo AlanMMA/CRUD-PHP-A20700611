@@ -5,7 +5,7 @@ if (!isset($_SESSION["logged"])) {
 }
 
 include("conexion.php");
-$user_id = $_POST["user_id"];
+$user_id = $_POST["user_id2"];
 $sql = "SELECT * from alumnos where ID_Alumno=" . $user_id;
 $query = mysqli_query($conn, $sql);
 if (!$row = mysqli_fetch_object($query)) {
@@ -35,7 +35,7 @@ if (!$row = mysqli_fetch_object($query)) {
     <form method="POST" action="ActualizarA.php">
         <section class="formulario">
 
-            <input type="hidden" name="user_id" value="<?php echo $row->ID_Alumno ?>">
+            <input type="hidden" name="user_id2" value="<?php echo $row->ID_Alumno ?>">
             <div class="row">
                 <label class="Nombre">Nombre:</label>
                 <input type="text" name="name" value="<?php echo $row->Nombre ?>" />

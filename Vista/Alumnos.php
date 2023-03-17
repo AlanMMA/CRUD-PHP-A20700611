@@ -66,9 +66,9 @@ thead {
                         echo "<tr><td> {$row->ID_Alumno}</td><td> {$row->Nombre}</td><td> {$row->Apellido}</td><td>
                              {$row->Edad}</td><td> {$row->CorreoE}</td><td>
                             <form method='POST' action='delete_alum.php'><button type='submit'>Borrar</button>
-                            <input type='hidden' name='user_id' value='" . $row->ID_Alumno . "'/></form>
+                            <input type='hidden' name='user_id2' value='" . $row->ID_Alumno . "'/></form>
                             <form method='POST' action='Edit_Alumno.php'>
-                            <input type='hidden' name='user_id' value='" . $row->ID_Alumno . "'>
+                            <input type='hidden' name='user_id2' value='" . $row->ID_Alumno . "'>
                             <button type='submit'>Editar</button>
                             </form>
                             </td>
