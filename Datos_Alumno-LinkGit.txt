@@ -1,11 +1,5 @@
-NOMBRE:
-Alan Mauricio Morales Argüello
+NOMBRE DEL ESTUDIANTE:          / NUMERO DE CONTROL:
+Alan Mauricio Morales Argüello / A20700611
 
-NUMERO DE CONTROL:
-A20700611
-
-ACTIVIDAD:
-Login y CRUD con php
-
-LINK AL REPOSITORIO:
-https://github.com/AlanMMA/CRUD-PHP-A20700611
+LINK DE REPOSITORIO A GIT:
+https://github.com/AlanMMA/CRUD-PHP-A20700611.git
